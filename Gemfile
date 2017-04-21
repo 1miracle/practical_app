@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.22.5'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'slim-rails'
 gem 'sqlite3'
 

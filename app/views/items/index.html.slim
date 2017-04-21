@@ -9,10 +9,12 @@ table
       th
       th
 
-  tbody
+  tbody#sortable.ui-sortable
     - @items.each do |item|
-      tr
-        td = item.name
+      tr.ui-state-default.ui-sortable-handle
+        td
+          .ui-icon.ui-icon-arrowthick-2-n-s
+          = item.name
         td = item.done
         td = link_to 'Show', item
         td = link_to 'Edit', edit_item_path(item)
